@@ -7,7 +7,7 @@ from rest_framework.decorators import api_view
 
 # Create your views here.
 
-@api_view(['GET', 'POST', 'PUT', 'DELETE'])
+@api_view(['GET', 'POST', 'DELETE'])
 def studentView(request):
     if(request.method == 'GET'):
         students = Students.objects.all()
