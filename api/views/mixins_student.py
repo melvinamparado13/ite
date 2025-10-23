@@ -26,9 +26,6 @@ class StudentDetail(mixins.ListModelMixin, mixins.CreateModelMixin, generics.Gen
         return self.list(request, pk)  # Uses ListModelMixin’s built-in list() method
     
     # Handle POST request: create a new employee
-    def post(self, request, pk):
-        return self.create(request, pk)  # Uses CreateModelMixin’s built-in create() method
-    
     def put(self, request, pk):
         return self.update(request, pk)
     
